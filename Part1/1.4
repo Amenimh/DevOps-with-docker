@@ -1,0 +1,17 @@
+amenimhadhbi@Amenis-Air ~ % docker run -d ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+amenimhadhbi@Amenis-Air ~ % docker container ls  
+amenimhadhbi@Amenis-Air ~ % docker exec -it d1 bash
+
+root@d13afc048cc7:/# apt update
+root@d13afc048cc7:/# apt upgrade
+root@d13afc048cc7:/# apt install curl
+
+root@d13afc048cc7:/# curl helsinki.fi
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
+
