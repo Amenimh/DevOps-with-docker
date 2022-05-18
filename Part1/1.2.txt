@@ -1,0 +1,5 @@
+amenimhadhbi@Amenis-Air ~ % docker ps -a         
+CONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+
+amenimhadhbi@Amenis-Air ~ % docker images        
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
