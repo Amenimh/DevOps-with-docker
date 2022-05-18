@@ -1,0 +1,41 @@
+amenimhadhbi@Amenis-Air ~ % docker run -d devopsdockeruh/simple-web-service:ubuntu                
+WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+37e2dca1fbd99f8f4cea7fe1dc7f6dfdffb58499b0cd0f62e762a1570c8bd5ae
+amenimhadhbi@Amenis-Air ~ % docker ps -a                                                                             
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED              STATUS              PORTS     NAMES
+37e2dca1fbd9   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"    About a minute ago   Up About a minute             dreamy_pascal
+f3c1ae6461df   ubuntu                                     "sh -c 'while true; …"   8 minutes ago        Up 8 minutes                  looper-it
+
+amenimhadhbi@Amenis-Air ~ % docker container ls                                                                      
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED              STATUS              PORTS     NAMES
+37e2dca1fbd9   devopsdockeruh/simple-web-service:ubuntu   "/usr/src/app/server"    About a minute ago   Up About a minute             dreamy_pascal
+f3c1ae6461df   ubuntu                                     "sh -c 'while t
+
+amenimhadhbi@Amenis-Air ~ % docker exec -it 37 bash
+root@37e2dca1fbd9:/usr/src/app# tail -f ./text.log
+2022-05-18 15:46:22 +0000 UTC
+2022-05-18 15:46:24 +0000 UTC
+2022-05-18 15:46:26 +0000 UTC
+2022-05-18 15:46:28 +0000 UTC
+2022-05-18 15:46:30 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-18 15:46:32 +0000 UTC
+2022-05-18 15:46:34 +0000 UTC
+2022-05-18 15:46:36 +0000 UTC
+2022-05-18 15:46:38 +0000 UTC
+2022-05-18 15:46:40 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-18 15:46:42 +0000 UTC
+2022-05-18 15:46:44 +0000 UTC
+2022-05-18 15:46:46 +0000 UTC
+2022-05-18 15:46:48 +0000 UTC
+2022-05-18 15:46:50 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-18 15:46:52 +0000 UTC
+2022-05-18 15:46:54 +0000 UTC
+2022-05-18 15:46:56 +0000 UTC
+2022-05-18 15:46:58 +0000 UTC
+2022-05-18 15:47:00 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-18 15:47:02 +0000 UTC
+
