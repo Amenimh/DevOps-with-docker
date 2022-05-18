@@ -1,0 +1,5 @@
+amenimhadhbi@Amenis-Air ~ % docker ps -a               
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+4a441654bad8   nginx     "/docker-entrypoint.…"   3 minutes ago    Up 3 minutes                80/tcp    wizardly_banach
+a5944b278d8e   nginx     "/docker-entrypoint.…"   6 minutes ago    Exited (0) 11 seconds ago             kind_lehmann
+9d98abd7f093   nginx     "/docker-entrypoint.…"   25 minutes ago   Exited (0) 11 seconds ago             agitated_rosalind
