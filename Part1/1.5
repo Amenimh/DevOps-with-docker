@@ -1,0 +1,22 @@
+amenimhadhbi@Amenis-Air ~ % docker pull devopsdockeruh/simple-web-service:ubuntu
+amenimhadhbi@Amenis-Air ~ % docker pull devopsdockeruh/simple-web-service:alpine
+
+amenimhadhbi@Amenis-Air ~ % docker images
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   14 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   14 months ago   15.7MB
+
+amenimhadhbi@Amenis-Air ~ % docker run -d -it devopsdockeruh/simple-web-service:alpine
+amenimhadhbi@Amenis-Air ~ % docker ps -a                                              
+CONTAINER ID   IMAGE                                      COMMAND                  CREATED          STATUS                      PORTS     NAMES
+a01f45093e4a   devopsdockeruh/simple-web-service:alpine   "/usr/src/app/server"    3 seconds ago    Up 2 seconds                          exciting_mendel
+
+amenimhadhbi@Amenis-Air ~ % docker exec -it a0 sh  
+
+/usr/src/app # tail -f ./text.log
+2022-05-19 10:13:17 +0000 UTC
+2022-05-19 10:13:19 +0000 UTC
+2022-05-19 10:13:21 +0000 UTC
+2022-05-19 10:13:23 +0000 UTC
+2022-05-19 10:13:25 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2022-05-19 10:13:27 +0000 UTC
